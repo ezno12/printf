@@ -1,0 +1,19 @@
+.\" Manpage for _printf.
+.\"User Commands
+.\"_PRINTF
+.TH man  "14 Mars 2021" "1.0" "_printf man page"
+.SH NAME
+_printf - format and print data.
+.SH SYNOPSIS
+printf FORMAT [ARGUMENT]...
+       printf OPTION
+.SH DESCRIPTION
+FORMAT controls the output as in C printf.   Interpreted  sequences are:
+%c - print a singlecharacter.
+%s - print astring of characters.
+%d - print adecimal (base 10) number.
+%i - print aninteger in base 10.
+.SH SEE ALSO
+Full  documentation  at:  <https://www.gnu.org/software/coreutils/printf>
+.SH AUTHOR
+Written by Ahmed Zitouni & Bassem Ben Yahia.
