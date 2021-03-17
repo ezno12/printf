@@ -42,15 +42,15 @@ return (i);
 */
 int pdec(va_list arg)
 {
-int i = 1;
 int x = va_arg(arg, int);
 int n;
-int last = x % 10;
+int last;
 int digit;
 int exp = 1;
-
+int i = 1;
 x = x / 10;
 n = x;
+last = n % 10;
 if (last < 0)
 {
 _putchar('-');
@@ -79,6 +79,7 @@ i++;
 _putchar(last + '0');
 return (i);
 }
+
 /**
 * pint - print int.
 *
@@ -88,14 +89,15 @@ return (i);
 */
 int pint(va_list arg)
 {
-i = 1;
 int x = va_arg(arg, int);
 int n;
-int last = x % 10;
+int last;
 int digit;
 int exp = 1;
+int i = 1;
 x = x / 10;
 n = x;
+last = n % 10;
 if (last < 0)
 {
 _putchar('-');
@@ -123,5 +125,4 @@ i++;
 }
 _putchar(last + '0');
 return (i);
-}
 }
