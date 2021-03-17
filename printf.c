@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 va_list arg;
 unsigned int i, j, flag;
 unsigned int len = 0;
-print_t print[] = {{"c", pchar}, {"s", pstr}, {NULL, NULL}};
+print_t print[] = {{"c", pchar}, {"s", pstr}, {"d", pdec}, {"i", pint}, {NULL, NULL}};
 va_start(arg, format);
 if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 return (0);
