@@ -33,4 +33,95 @@ _putchar(s[i]);
 }
 return (i);
 }
+/**
+* pdec - print decimal.
+*
+* @arg: decimal to print.
+*
+* Return: printed decimal, int (success).
+*/
+int pdec(va_list arg)
+{
+int i = 1;
+int x = va_arg(arg, int);
+int n;
+int last = x % 10;
+int digit;
+int exp = 1;
 
+x = x / 10;
+n = x;
+if (last < 0)
+{
+_putchar('-');
+n = -n;
+x = -x;
+last = -last;
+i++;
+}
+if (n > 0)
+{
+while (n / 10 != 0)
+{
+exp = exp * 10;
+n = n / 10;
+}
+n = x;
+while (exp > 0)
+{
+digit = n / exp;
+_putchar(digit + '0');
+n = n - (digit * exp);
+exp = exp / 10;
+i++;
+}
+}
+_putchar(last + '0');
+return (i);
+}
+/**
+* pint - print int.
+*
+* @arg: integer to print.
+*
+* Return: printed int, int (success).
+*/
+int pint(va_list arg)
+{
+i = 1;
+int x = va_arg(arg, int);
+int n;
+int last = x % 10;
+int digit;
+int exp = 1;
+x = x / 10;
+n = x;
+if (last < 0)
+{
+_putchar('-');
+n = -n;
+x = -x;
+last = -last;
+i++;
+}
+if (n > 0)
+{
+while (n / 10 != 0)
+{
+exp = exp * 10;
+n = n / 10;
+}
+n = x;
+while (exp > 0)
+{
+digit = n / exp;
+_putchar(digit + '0');
+n = n - (digit * exp);
+exp = exp / 10;
+i++;
+}
+}
+_putchar(last + '0');
+return (i);
+}
+}
