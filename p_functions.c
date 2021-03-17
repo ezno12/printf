@@ -22,12 +22,12 @@ return (1);
 */
 int pstr(va_list arg)
 {
-unsigned i;
+unsigned int i;
 char *s;
 s = va_arg(arg, char *);
 if (s == NULL)
 s = "(null)";
-for ( i = 0; s[i] != '\0'; i++)
+for (i = 0; s[i] != '\0'; i++)
 {
 _putchar(s[i]);
 }
@@ -71,7 +71,7 @@ while (exp > 0)
 {
 digit = n / exp;
 _putchar(digit + '0');
-n = n - (digit * exp);
+n = n - (digit *exp);
 exp = exp / 10;
 i++;
 }
@@ -118,7 +118,7 @@ while (exp > 0)
 {
 digit = n / exp;
 _putchar(digit + '0');
-n = n - (digit * exp);
+n = n - (digit *exp);
 exp = exp / 10;
 i++;
 }
