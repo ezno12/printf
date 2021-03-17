@@ -10,7 +10,7 @@
 int _printf(const char *format, ...)
 {
 va_list arg;
-unsigned int i, j, check;
+unsigned int i, j, flag;
 unsigned int len = 0;
 print_t print[] = {{"c", pchar}, {"s", pstr}, {NULL, NULL}};
 va_start(arg, format);
@@ -22,13 +22,13 @@ while (format[i] != '\0')
 if (format[i] == '%' && format[i + 1] != '%')
 {
 j = 0;
-check = 0;
+flag = 0;
 while (print[j].p != NULL)
 {
 if (format[i + 1] == print[j].print[0])
 {
 len += print[j].p(arg);
-check = 1;
+flag = 1;
 i++;
 }
 j++;
