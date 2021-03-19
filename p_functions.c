@@ -2,7 +2,7 @@
 /**
 * pchar - print char.
 *
-* @arg: char to print.
+* @arg : char to print.
 *
 * Return: printed char , int (success).
 */
