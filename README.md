@@ -2,7 +2,7 @@ Creating printf from scratch.
 
 Printf - A function that produces output according to a format.
 
-handle the following conversin specifiers:
+handle the following conversin specifiers :
  * c - character.
  * s - string.
  * d - decimal.
