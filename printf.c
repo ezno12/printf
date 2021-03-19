@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* _printf - print function.
+* _printf - print function
 *
 * @format: character.
 *
