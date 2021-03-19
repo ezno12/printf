@@ -1,7 +1,7 @@
 .\" Manpage for _printf.
 .\"User Commands
 .\"_PRINTF
-.TH man  "14 Mars 2021" "1.0" "_printf man page"
+.TH man  "14 Mars 2021" "1.0" "_printf man page" 
 .SH NAME
 _printf - format and print data.
 .SH SYNOPSIS
